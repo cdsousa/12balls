@@ -17,7 +17,7 @@ function TwelveBalls()
     if rand(Bool)
         weight = 1.0-0.1*rand(1:9)
     else
-        weight = 1.0+abs(randn())
+        weight = 1.0+abs(randn())+0.0001
     end
     TwelveBalls(odd, weight)
 end
