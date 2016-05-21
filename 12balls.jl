@@ -3,7 +3,7 @@ immutable TwelveBalls
     weight::Float64
     function TwelveBalls(odd, weight)
         if !(1 <= odd <= 12)
-            error("Special ball odd must be a number from 1 to 12")
+            error("Odd ball number must be from 1 to 12")
         end
         if weight <= 0 || weight == 1
             error("Weight must be positive and different from 1")
