@@ -59,7 +59,7 @@ end
 
 function Base.call(b::TwelveBallsBalance, l, r)
     if b.num <= 0
-        error("You can't' use this balance again")
+        error("You can't use this balance again")
     else
         b.num -= 1
         balance12balls(b.tb, l, r)
